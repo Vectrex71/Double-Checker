@@ -1,0 +1,243 @@
+/* Allgemeine Stile - Dark Theme */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-image: url("back01.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #e0e0e0; /* Light text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(28, 28, 30, 0.75); /* Semi-transparent dark background */
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    overflow: hidden;
+}
+
+header {
+    position: relative; /* This is necessary for the absolute positioning of the logo */
+    background-color: rgb(55, 57, 61);
+    color: #fff;
+    padding: 20px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+header p {
+    margin: 5px 0 0;
+    opacity: 0.8;
+}
+
+section.card {
+    padding: 20px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent; /* Cards are transparent within the container */
+}
+
+section.card:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+p.info {
+    font-size: 0.9em;
+    color: #bfdbfe; /* Light Blue */
+    background-color: rgba(59, 130, 246, 0.2);
+    border-left: 4px solid #3b82f6; /* Blue */
+    padding: 10px 15px;
+    margin-top: 0;
+    border-radius: 4px;
+}
+
+p.info.info-gray {
+    color: #d1d5db; /* Light Gray */
+    background-color: rgba(107, 114, 128, 0.2);
+    border-left-color: #6b7280; /* Gray */
+}
+
+/* Interaktive Elemente */
+button {
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #3b82f6; /* Blue */
+    color: white;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #60a5fa; /* Lighter Blue */
+    box-shadow: 0 0 15px rgba(96, 165, 250, 0.8);
+}
+
+button:disabled {
+    background-color: #4a5568;
+    color: #a0aec0;
+    cursor: not-allowed;
+}
+
+.folder-selection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.folder-selection button {
+    flex-shrink: 0;
+}
+
+.folder-selection span {
+    margin-left: 15px;
+    font-style: italic;
+    color: #a0aec0; /* Lighter gray */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Ergebnisliste */
+#results-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#results-container li.group-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.image-preview-container img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+#results-container li.file-item {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: none;
+    transition: background-color 0.2s;
+}
+
+#results-container li.file-item:first-of-type {
+     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#results-container li.file-item label {
+    display: block;
+    cursor: pointer;
+}
+
+/* Visuelles Feedback für Auswahl */
+input[type="radio"] {
+    accent-color: #34d399; /* Emerald Green */
+}
+
+.file-to-keep {
+    background-color: rgba(16, 185, 129, 0.2); /* Emerald Green Transparent */
+}
+
+.file-to-keep label {
+    font-weight: bold;
+    color: #a7f3d0; /* Light Emerald */
+}
+
+.file-to-delete {
+    background-color: rgba(239, 68, 68, 0.15); /* Red Transparent */
+}
+
+.file-to-delete label {
+    color: #fda4af; /* Light Red */
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+
+/* Footer und Statusleiste */
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: rgba(28, 28, 30, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#status-bar {
+    padding: 10px 30px;
+    font-size: 0.9em;
+    color: #a0aec0;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 80px;
+    width: auto;
+    border-radius: 15px;
+}
+
+#paypal-logo {
+    height: 32px;
+    width: auto;
+    border-radius: 15px;
+    margin-right: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+/* Progress Bar */
+#progress-container {
+    height: 5px;
+    background-color: #4a5568;
+    margin: 0 30px 5px 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #3b82f6;
+    transition: width 0.1s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}

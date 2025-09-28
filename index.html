@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Checker</title>
+    <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <a href="https://www.paypal.com/paypalme/HansjuergWuethrich" target="_blank" rel="noopener noreferrer">
+                    <img src="PayPalme.png" alt="PayPal Me" id="paypal-logo">
+                </a>
+                <img src="Logo.png" alt="Logo" id="logo">
+            </div>
+            <h1>Double Checker</h1>
+            <p>Finds and removes similar duplicates and their associated images.</p>
+        </header>
+
+        <section class="card">
+            <h2>1. Select Folders</h2>
+            <p class="info info-gray">Your browser will ask for permission to access the folders. This is required for scanning and deletion.</p>
+            <div class="folder-selection">
+                <button id="select-rom-folder">Select ROM Folder</button>
+                <span id="rom-folder-path">No folder selected</span>
+            </div>
+            <div class="folder-selection">
+                <button id="select-image-folder">Select Image Folder</button>
+                <span id="image-folder-path">No folder selected</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>2. Start Scan</h2>
+            <button id="scan-button" disabled>Find Duplicates</button>
+        </section>
+
+        <section class="card">
+            <h2>3. Results</h2>
+            <p class="info info-gray">For each group, select the version you want to <strong>keep</strong>. The file marked in green will be kept, all others in the group will be deleted.</p>
+            <div id="results-container">
+                <p>No scan has been performed yet.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>4. Deletion Process</h2>
+            <button id="delete-button" disabled>Delete Marked Files</button>
+        </section>
+
+        <footer>
+            <div id="progress-container" class="hidden">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="status-bar">Ready.</div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
