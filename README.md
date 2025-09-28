@@ -45,5 +45,5 @@ For example, it would recognize `MyGame (USA).zip`, `MyGame (Europe) (Rev 1).zip
 If you find this tool useful, please consider supporting its development!
 
 <a href="https://www.paypal.com/paypalme/HansjuergWuethrich" target="_blank" rel="noopener noreferrer">
-    <img src="PayPalme.png" alt="Donate with PayPal" width="200">
+    <img src="paypal-donate-button.png" alt="Donate with PayPal" width="200">
 </a>
