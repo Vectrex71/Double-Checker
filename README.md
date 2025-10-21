@@ -26,7 +26,8 @@ For example, it would recognize `MyGame (USA).zip`, `MyGame (Europe) (Rev 1).zip
 
 ## How to Use
 
-1.  **Open the Tool:** Open the `index.html` file in a modern web browser that supports the File System Access API (like Google Chrome or Microsoft Edge).
+1.  **Open the Tool:** Open the `index.html` file in a modern web browser that supports the File System Access API (like Google Chrome or Microsoft Edge)
+     [**Try the Tool here!**](https://vectrex71.github.io/Double-Checker/)
 2.  **Select Folders:**
     -   Click **Select ROM Folder** and choose the directory containing your game files.
     -   Click **Select Image Folder** and choose the directory where your game artwork is stored.
