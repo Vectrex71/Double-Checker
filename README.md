@@ -16,6 +16,9 @@ Unlike simple duplicate finders that only check for identical files, Double Chec
 
 For example, it would recognize `MyGame (USA).zip`, `MyGame (Europe) (Rev 1).zip`, and `MyGame.zip` as being part of the same duplicate group.
 
+<img width="1919" height="1010" alt="image" src="https://github.com/user-attachments/assets/95632d98-4b33-46da-9387-fde78889f21f" />
+
+
 ## Features
 
 -   **Intelligent Duplicate Detection:** Finds similar files, not just identical ones.
